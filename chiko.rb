@@ -13,7 +13,7 @@ class Chiko < Formula
   on_macos do
     on_intel do
       url "https://github.com/felangga/chiko/releases/download/v0.0.1/chiko_0.0.1_darwin_amd64.tar.gz"
-      sha256 "6cab763120d05008f54c87c358d2e8507bdee2560bf9c271a1c34a1f20901e51"
+      sha256 "cba0dd6ef0c46bccd398dd3b0bcdb71a4f44cedf059a6a7d180b97f2e297e3b6"
 
       def install
         bin.install "chiko"
@@ -21,7 +21,7 @@ class Chiko < Formula
     end
     on_arm do
       url "https://github.com/felangga/chiko/releases/download/v0.0.1/chiko_0.0.1_darwin_arm64.tar.gz"
-      sha256 "af77e1d5b32d681c150a5612a30d10b2e0d1a04ea028e5d2b3f242247b7ab59c"
+      sha256 "3ba77dc431fa69b7db1d395f10e6c0a72455d67d2b51f1c8fa49219b0bf956a5"
 
       def install
         bin.install "chiko"
@@ -33,7 +33,7 @@ class Chiko < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/felangga/chiko/releases/download/v0.0.1/chiko_0.0.1_linux_amd64.tar.gz"
-        sha256 "2965dd0f344c28bd62648a5ae5d1ceef2fdbd490e2e6424cb07d1dfbca6a9963"
+        sha256 "31e6bb3d1ce1a2de5a5ac416552b561c2a90facf474af36e27b7e145a53789d8"
 
         def install
           bin.install "chiko"
@@ -43,7 +43,7 @@ class Chiko < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/felangga/chiko/releases/download/v0.0.1/chiko_0.0.1_linux_arm64.tar.gz"
-        sha256 "0a0b5300967358ad577e75e0b597d629852be12fc923a822f85699ec4c5f5b2e"
+        sha256 "03f6d64507026fe2f7016d1b8de09041c402efa2ea44e950c9f8814dcd21423e"
 
         def install
           bin.install "chiko"
