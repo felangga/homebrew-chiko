@@ -5,23 +5,23 @@
 class Chiko < Formula
   desc "A simple TUI gRPC client"
   homepage "https://github.com/felangga/chiko"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   depends_on "go"
 
   on_macos do
     on_intel do
-      url "https://github.com/felangga/chiko/releases/download/v0.0.3/chiko_0.0.3_darwin_amd64.tar.gz"
-      sha256 "c6237c4b021ff0dbeae303843ee18c47a76cbe933ddb878ce9f120e80662db3c"
+      url "https://github.com/felangga/chiko/releases/download/v0.0.4/chiko_0.0.4_darwin_amd64.tar.gz"
+      sha256 "aec071a0e7095bc785b906f11b5da83ba4dc030ff73386f773f1b2e20a49161b"
 
       def install
         bin.install "chiko"
       end
     end
     on_arm do
-      url "https://github.com/felangga/chiko/releases/download/v0.0.3/chiko_0.0.3_darwin_arm64.tar.gz"
-      sha256 "0b4234c01908a27550d4d1ab9a2a0feb397ccb93f720bd217c911b342264e6e2"
+      url "https://github.com/felangga/chiko/releases/download/v0.0.4/chiko_0.0.4_darwin_arm64.tar.gz"
+      sha256 "bd4062d737993d920d047e55aae2c2f960c7a04f96265986d94e388bdcee63fa"
 
       def install
         bin.install "chiko"
@@ -32,8 +32,8 @@ class Chiko < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/felangga/chiko/releases/download/v0.0.3/chiko_0.0.3_linux_amd64.tar.gz"
-        sha256 "cb86bf7af9752641abde040f7b72d122cfc0a930a787324a34a014d8403f6f17"
+        url "https://github.com/felangga/chiko/releases/download/v0.0.4/chiko_0.0.4_linux_amd64.tar.gz"
+        sha256 "b7b8550c107cc8c14446f99d6670ce5082cfaa777c79f950b4f1f837f65d5c49"
 
         def install
           bin.install "chiko"
@@ -42,8 +42,8 @@ class Chiko < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/felangga/chiko/releases/download/v0.0.3/chiko_0.0.3_linux_arm64.tar.gz"
-        sha256 "5adf8b10d23f1fec8f6f611dfae0b87540bc1b918393ade902d3e53d66c7a292"
+        url "https://github.com/felangga/chiko/releases/download/v0.0.4/chiko_0.0.4_linux_arm64.tar.gz"
+        sha256 "f6a09a16ff499eeec99c7513f78a7c4ba574317b3d375acf1b81ef873cc64fc1"
 
         def install
           bin.install "chiko"
