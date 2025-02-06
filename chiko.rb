@@ -5,23 +5,23 @@
 class Chiko < Formula
   desc "A simple TUI gRPC client"
   homepage "https://github.com/felangga/chiko"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   depends_on "go"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felangga/chiko/releases/download/v0.0.5/chiko_0.0.5_darwin_amd64.tar.gz"
-      sha256 "c643ab9bb35c2a7125790d285f53bfff32904dc22a87da98d50e104f2d950c80"
+      url "https://github.com/felangga/chiko/releases/download/v0.0.6/chiko_0.0.6_darwin_amd64.tar.gz"
+      sha256 "ece20422729ce25de0a0533f9bc0349d9bb17f1e8015afcabe6ec801c705ee0a"
 
       def install
         bin.install "chiko"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felangga/chiko/releases/download/v0.0.5/chiko_0.0.5_darwin_arm64.tar.gz"
-      sha256 "95eba7ed2aa1d8628491d925eef15e52d54da3b76f36650fe6d8400df01cc440"
+      url "https://github.com/felangga/chiko/releases/download/v0.0.6/chiko_0.0.6_darwin_arm64.tar.gz"
+      sha256 "cd3a289d30086e62cd9c2125fcfa7c40156255edef96ddd7d742208bf8abae70"
 
       def install
         bin.install "chiko"
@@ -32,8 +32,8 @@ class Chiko < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/felangga/chiko/releases/download/v0.0.5/chiko_0.0.5_linux_amd64.tar.gz"
-        sha256 "8770b490ee38966308724fb2cd88ab4a0e3d8762374c5dbe2df3cdad6506a9dc"
+        url "https://github.com/felangga/chiko/releases/download/v0.0.6/chiko_0.0.6_linux_amd64.tar.gz"
+        sha256 "5a3c0719ebdbb52d8dc75792aede8b48b36749410efe728193529f7664a9012a"
 
         def install
           bin.install "chiko"
@@ -42,8 +42,8 @@ class Chiko < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/felangga/chiko/releases/download/v0.0.5/chiko_0.0.5_linux_arm64.tar.gz"
-        sha256 "9cbbb697d9c26ea1e5c5a848a3d10c1c88b11eb2518fa421e5fcf71c04a7b47d"
+        url "https://github.com/felangga/chiko/releases/download/v0.0.6/chiko_0.0.6_linux_arm64.tar.gz"
+        sha256 "6125dbcd70551c771b8da701dad9da8b1230c7a1e8ee04137be07d8114a9569a"
 
         def install
           bin.install "chiko"
