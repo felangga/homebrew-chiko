@@ -5,23 +5,23 @@
 class Chiko < Formula
   desc "A simple TUI gRPC client"
   homepage "https://github.com/felangga/chiko"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   depends_on "go"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felangga/chiko/releases/download/v0.1.2/chiko_0.1.2_darwin_amd64.tar.gz"
-      sha256 "2774fc0997d44dd109c1a07615493d5cc012a26ee984d97cac704ab4fe09e377"
+      url "https://github.com/felangga/chiko/releases/download/v0.1.3/chiko_0.1.3_darwin_amd64.tar.gz"
+      sha256 "0127bc52056fd567d575a8ead645df03b86bc6f55b83d37a640f5f97b0e27f7b"
 
       def install
         bin.install "chiko"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felangga/chiko/releases/download/v0.1.2/chiko_0.1.2_darwin_arm64.tar.gz"
-      sha256 "619b1c982bf7ebe0488f13a191e72b02503539643fd13c9a3b7fe07ebe723527"
+      url "https://github.com/felangga/chiko/releases/download/v0.1.3/chiko_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f7cec58255f116e8b7a61ecc4579ea9f9061a1022dd354665b4509e14371a2ac"
 
       def install
         bin.install "chiko"
@@ -31,15 +31,15 @@ class Chiko < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felangga/chiko/releases/download/v0.1.2/chiko_0.1.2_linux_amd64.tar.gz"
-      sha256 "e6f57a51d3a891638287b8946356f08c8a8d68162b0f7303dc432832ad7a74ca"
+      url "https://github.com/felangga/chiko/releases/download/v0.1.3/chiko_0.1.3_linux_amd64.tar.gz"
+      sha256 "a711923f2116541cae71fca0b3f8e2f4cf25034499ba16553fc0f7f83066b6db"
       def install
         bin.install "chiko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felangga/chiko/releases/download/v0.1.2/chiko_0.1.2_linux_arm64.tar.gz"
-      sha256 "73a84d56199ee8a6ca1c573daff1dccb00a879489e10469a138b311096c188be"
+      url "https://github.com/felangga/chiko/releases/download/v0.1.3/chiko_0.1.3_linux_arm64.tar.gz"
+      sha256 "68051991689f8f42832f362e23fa5a99f6549dc9a42ee5bdf0194e4b31eb83a3"
       def install
         bin.install "chiko"
       end
