@@ -13,7 +13,7 @@ class Chiko < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/felangga/chiko/releases/download/v0.2.0/chiko_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d0185ce35cdf4dd8292b877fc0bb6bdb0b4cd2f3dd37d52fbb0d0f37d957cae6"
+      sha256 "c251e16c7a562a64c42a3b35c705bb71f6ae9a952a36af2b4e2b4c30e4e7ff8d"
 
       define_method(:install) do
         bin.install "chiko"
@@ -21,7 +21,7 @@ class Chiko < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/felangga/chiko/releases/download/v0.2.0/chiko_0.2.0_darwin_arm64.tar.gz"
-      sha256 "965afabe314d0604ed9fdc4abbba832b9697e1275a26471cc8b32d999e035f4d"
+      sha256 "9f287d0a007ea4311623868c7a11eec23a26d0b3ef703c91ac82dfa2a074dfe2"
 
       define_method(:install) do
         bin.install "chiko"
@@ -32,14 +32,14 @@ class Chiko < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/felangga/chiko/releases/download/v0.2.0/chiko_0.2.0_linux_amd64.tar.gz"
-      sha256 "e00a664f8cd4a156b62bb6c2db5cc5573f25779c1a250000fbb8608af11ce395"
+      sha256 "dfbbfe9bad4674fb4d69199ce7ace2f9f7926db695b675b85c10ef1267dc6048"
       define_method(:install) do
         bin.install "chiko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/felangga/chiko/releases/download/v0.2.0/chiko_0.2.0_linux_arm64.tar.gz"
-      sha256 "27c72349c5812d129956b40bf386a68a0bfd4b7bcf488022c6144d6238cd7a9c"
+      sha256 "13dc347596a6282cc5d5e72f4113bd1e96d9afeb825e57bf54251a0a6fd1e26d"
       define_method(:install) do
         bin.install "chiko"
       end
